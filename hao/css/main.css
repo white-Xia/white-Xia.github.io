@@ -1,7 +1,7 @@
 body{
   font-family:"Microsoft Yahei"
   color:black;
-  background:#E6E6FA;
+  background:ffffff;
   margin:0;
   padding:0;
 }
@@ -44,9 +44,9 @@ header{
 .container .box .link li{
   display:inline-block;
   font-size:16px;
-  width:100px;
+  width:120px;
   height:45px;
-  margin:10px;
+  margin:10px 5px;
 }
 .container .box .link a{
   display:inline-block;
@@ -54,13 +54,12 @@ header{
   height:45px;
   line-height:45px;
   text-align:center;
-  background:purple;
-  color:#ffffff;
-  border:1px solid #ffffff;
+  background:#CCCBCB;
+  color:black;
   border-radius:5px;
+  font-weight:bold;
 }
 .container .box .link a:hover{
-  background:rgba(255,255,255,0.5);
-  color:purple;
-  border:1px solid purple;
+  /*background:rgba(255,255,255,0.5);*/
+  color:white;
 }
