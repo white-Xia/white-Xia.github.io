@@ -120,3 +120,60 @@
           scrollingSpeed:1000,                                    //配置页面切换速度
           anchors:['page1','page2','page3','page4','page5']
         })
+####五，方法
+    调用方式
+    $.fn.fullpage.xxx();
+    1,moveSectionUp():
+      向上滚动一页
+    2,moveSectionDown():
+      向下滚动一页
+    3,moveTo(section,slide):
+      滚动到第几页,第几个幻灯片,注意,页面是从1开始,
+      而幻灯片,从0开始
+    4,setAutoScrolling(boolean):动态设置autoScrolling
+    5,setLockAnchors(boolean):动态设置lockAnchors
+    6,setRecordHistory(boolean):动态设置recordHistory
+    7,setScrollingSpeed(milliseconds):动态设置scrollingSpeed
+    8,setAllowScrolling(boolean,[directions]):
+      添加或删除鼠标滚轮/滑动控制,第一个参数true为启用,false为
+      禁用,后面的参数为方向,取值包含all,up,right,bottom,left,
+      可以使用多个,逗号分隔
+    9,destroy(type)  $.fn.fullpage.destroy('all')
+      销毁fullpage特效，type可以不写,或者使用all，不写type，
+      fullpage给页面添加的样式和html元素还在，如果使用all，
+      则样式、html等全部销毁，页面恢复和不适用fullpage相同的效果
+    10,reBuild()
+      重新更新页面和尺寸,用于通过ajax请求后改变页面结构之后，
+      重建效果
+####六，延时加载 lazy loading
+      将图片或者视频中的src替换成data-src即可延迟加载
+    1,图片
+      <img data-src="image.png">
+    2,视频
+      <video>
+        <source data-src="video.webm" type="video/webm">
+        <source data-src="video.mp4" type="video/mp4">
+      </video>
+####七、回调
+    1,afterLoad(anchorLink,index)
+    滚动到某一section，且滚动结束后，会触发一次此回调函数，函数
+    接收anchorLink和index两个参数，anchorLink时锚链接的名称，
+    index是序号，从1开始计算
+    我们可以根据anchorLink和index参数值的判断，触发相应的事件
+    2,inLeave(index,nextIndex,direction)
+    在我们离开一个section时,会触发一次此回调函数，接收index、ndexIndex
+    和direction3个参数:
+      next:是离开的“页面”的序号，从1开始计算
+      ndexIndex:是滚动到的目标“页面”的序号,从1开始计算
+      direction:判断往上滚还是往下滚动,值是up或down
+    return false;可以取消滚动
+    3,afterRender()
+    页面结构生成后的回调函数,或者说页面初始化完成后的回调函数
+    4,afterResize()
+    浏览器窗口尺寸改变后的回调函数
+    5,afterSlideLoad(anchorLink,index,slideAnchor,slideIndex)
+    滚动到某一幻灯片后的回调函数,与afterLoad类似，接收anchorLink,
+    index,slideIndex,direction四个参数
+    6,onSlideLeave(anchorLink,index,slideIndex,direction,nextSlideIndex)
+    在我们离开一个slide时，会触发一次此回调函数，与onLeave类似，接收
+    anchorLink,index,slideIndex,direction4个参数

@@ -15,6 +15,19 @@ $(document).ready(function(){
     navigationTooltips:['1','2','3','4','5'],
     showActiveTooltip:true,
     slidesNavigation:true,
-    slidesNavPosition:'top'
+    slidesNavPosition:'top',
+    afterLoad:function(anchorLink,index){
+      console.log(anchorLink+","+index);
+    },
+    onLeave:function(index,nextIndex,direction){
+      console.log(index+','+nextIndex+','+direction);
+    },
+    afterRender:function(){
+      console.log('afterRender');
+    },
+    afterResize:function(){
+      console.log('afterResize');
+      console.log($('body').width())
+    }
   });
 })
