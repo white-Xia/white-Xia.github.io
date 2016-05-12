@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<title>去除空格</title>
+	<style>
+		html,body,div,input{margin:0;padding:0;}
+		.main{width:400px;height:auto;padding:0 15px;text-align:center;}
+		.main input{width:100%;height:35px;border:none;margin-top:20px;border-radius:5px;}
+		input[type="text"]{text-align:left;padding-left:15px;box-sizing:border-box;border:1px solid blue;}
+		input[type="button"]{width:50%;background:blue;}
+		@media only screen and (max-width: 415px) {
+			.main{width:100%;box-sizing:border-box;}
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<input id="userName" type="text" placeholder="请输入用户名">
+		<input id="rule" type="button" value="过滤">
+	</div>
+
+
+	<script>
+		var userName = document.getElementById('userName'),
+				rule     = document.getElementById('rule'),
+				regexEmpty = /^(\s|\u00A0)+|(\s|\u00A0)+$/g;
+
+		rule.onclick = function (){
+			userName.value = userName.value.replace(regexEmpty,''); //正则替换
+			console.log(userName.value);
+		}
+
+
+		/*function ruleText(obj){
+			obj.value = obj.value.replace(regexEmpty,''); //正则替换
+			console.log(obj.value);
+		}*/		
+
+	</script>
+</body>
+</html>
