@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<title>输入框不能为空！</title>
+	<style>
+		html,body,div,input{margin:0;padding:0;}
+		.main{width:400px;height:auto;padding:0 15px;text-align:center;}
+		.main input{width:100%;height:35px;border:none;margin-top:20px;border-radius:5px;}
+		input[type="text"]{text-align:left;padding-left:15px;box-sizing:border-box;border:1px solid green;}
+		input[type="button"]{width:50%;background:green;}
+		@media only screen and (max-width: 415px) {
+			.main{width:100%;box-sizing:border-box;}
+		}
+		a[title="站长统计"]{
+            display:none;
+        }
+	</style>
+</head>
+<body>
+	<div class="main">
+		<input id="userName" type="text" placeholder="请输入用户名">
+		<input id="rule" type="button" value="验证">
+	</div>
+
+
+	<script>
+		var userName = document.getElementById('userName'),
+			rule	 = document.getElementById('rule'),
+			deleteEmpty = null,
+			regex    = /\s+/g;
+		deleteEmpty = function(obj){
+			obj.value = obj.value.replace(regex,'');
+			if(!obj.value){
+				alert('用户名不能为空');
+			}else{
+				alert('pass');
+			}
+		}
+		rule.onclick = function(){
+			deleteEmpty(userName);
+		};
+	</script>
+</body>
+</html>
