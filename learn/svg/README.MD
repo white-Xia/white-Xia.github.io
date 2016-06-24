@@ -186,7 +186,8 @@ style="fill:yellow" />
 ```
 
 [查看此例：click me！](http://white-xia.github.io/learn/svg/case/ellipse2.html)
-下面例子组合了两个椭圆
+下面例子组合了两个椭圆    
+
 ```
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
@@ -201,9 +202,12 @@ style="fill:purple"/>
 style="yellow"/>
 </svg>
 ```
-[查看此例：click me！](http://white-xia.github.io/learn/svg/case/ellipse3.html)
+[查看此例：click me！](http://white-xia.github.io/learn/svg/case/ellipse3.html)    
+
+
 #####`<line>`标签--线条
->`<line>`标签用来创建线条
+>`<line>`标签用来创建线条    
+
 ```
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
@@ -221,9 +225,12 @@ style="stroke:red;stroke-width:5"/>
 * y1属性在y轴定义线条的开始
 * x2属性在x轴定义线条的结束
 * y2属性在y轴定义线条的结束
-[查看此例：click me！](http://white-xia.github.io/learn/svg/case/line1.html)
+[查看此例：click me！](http://white-xia.github.io/learn/svg/case/line1.html)    
+
+
 #####`<polygon>`标签--多边形
->`<polygon>`标签用来创建含有不少于三个边的图形
+>`<polygon>`标签用来创建含有不少于三个边的图形    
+
 ```
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
@@ -241,7 +248,8 @@ style="stroke:red;stroke-width:5;"/>
 
 [查看此例：click me！](http://white-xia.github.io/learn/svg/case/polygon2.html)
 
-创建一个四边形：
+创建一个四边形：    
+
 ```
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
@@ -254,9 +262,11 @@ xmlns="http://www.w3.org/2000/svg">
 style="fill:#fff;stroke:red;stroke-width:1;"/>
 </svg>
 ```
-[查看此例：click me！](http://white-xia.github.io/learn/svg/case/polygon1.html)
+[查看此例：click me！](http://white-xia.github.io/learn/svg/case/polygon1.html)    
+
 #####`<polyline>`标签--折线
->`<polyline>`标签用来创建仅包含直线的形状、
+>`<polyline>`标签用来创建仅包含直线的形状、    
+
 ```
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
@@ -299,7 +309,9 @@ style="fill:white;stroke:red;stroke-width:2"/>
 | T  | smooth quadratic Bézier curveto  光滑二次贝塞尔曲线到 |  (x y)+   |
 | A  | elliptical arc 椭圆弧 |  (rx ry x-axis-rotation large-arc-flag sweep-flag x y)   |
 | R  | catmull-rom curveto catmull-rom曲线 |  x1 y1 (x y)+   |
-**注释：**以上所有命令均允许小写字母。大写表示绝对定位，小写表示相对定位。
+
+**注释：**以上所有命令均允许小写字母。大写表示绝对定位，小写表示相对定位。    
+
 ```
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
