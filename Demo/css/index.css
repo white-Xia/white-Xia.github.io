@@ -1,0 +1,262 @@
+.middle-img {
+    position: absolute;
+    left: 259px;
+    top: 0px;
+    width: 40px;
+}
+
+.up-img {
+    position: absolute;
+    top: -40px;
+    left: 261px;
+    width: 40px;
+}
+
+.down-img {
+    position: absolute;
+    top: 40px;
+    left: 257px;
+    width: 40px;
+}
+
+.left-img {
+    position: absolute;
+    left: 218px;
+    width: 40px;
+}
+
+.right-img {
+    position: absolute;
+    left: 300px;
+    width: 40px;
+}
+
+
+/* 
+2017/09/28 新增
+ */
+
+.loading {
+    background-color: #eeedeb;
+    border: 1px solid #eeedeb;
+    background-size: 22px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url('../images/loading.gif');
+}
+
+.mask {
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    background: rgba(0, 0, 0, .5);
+    z-index: 3;
+}
+
+.mask:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+    height: 100%;
+}
+
+.mask-content {
+    display: inline-block;
+    vertical-align: middle;
+    width: 300px;
+    height: 500px;
+    padding: 10px;
+    text-align: center;
+    /* border-radius:5px; */
+    background: #fff;
+}
+
+.mask-close {
+    position: relative;
+    width: 100%;
+    height: 60px;
+}
+
+.mask-close img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 20px;
+    cursor: pointer;
+}
+
+.mask-text {
+    display: inline-block;
+    width: 100%;
+}
+
+.mask-text p {
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    color: #000;
+    font-weight: 600;
+}
+
+.mask-img {
+    display: inline-block;
+    height: auto;
+    margin: 30px auto 0 auto;
+    padding: 10px;
+}
+
+.mask-img img {
+    display: inline-block;
+    width: 240px;
+    height: 240px;
+}
+
+.am-gallery {
+    padding: 0;
+}
+
+.am-gallery-con {
+    width: 100%;
+    height: 320px;
+}
+
+.am-gallery-overlay .am-gallery-item .loading {
+    /* content: ''; */
+    display: block;
+    width: 100%;
+    height: 320px;
+    background-color: #eeedeb;
+    border: 1px solid #eeedeb;
+    background-size: 22px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url('../images/loading.gif');
+}
+
+
+/* 
+.am-gallery .am-gallery-con,
+.am-gallery .grid-sizer {
+    width: 33.33%;
+} */
+
+li.am-gallery-con {
+    /* padding: 0; */
+    box-sizing: border-box !important;
+}
+
+.footer {
+    display: none;
+    position: fixed;
+    bottom: -1px;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100px;
+    background-color: #edfaff;
+    font-size: 15px;
+}
+
+.footer-content {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0;
+    text-align: center;
+}
+
+.share-box {
+    display: inline-block;
+    width: 33.3333%;
+    height: 75px;
+    padding-top: 8px;
+}
+
+.share-box i,
+.share-box span {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.share-box i {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    line-height: 50px;
+    border-radius: 50%;
+    color: #fff;
+    background: #42b236;
+}
+
+.share-box i.icon-qq {
+    background: #4caeeb;
+}
+
+.share-box span {
+    font-size: 12px;
+    height: 25px;
+    line-height: 25px;
+}
+
+.grid {
+    padding-bottom: 100px;
+}
+
+
+/* end */
+
+@media screen and (max-width: 450px) {
+    .middle-img {
+        position: absolute;
+        left: 259px;
+        top: 0px;
+        width: 40px;
+        display: none;
+    }
+    .up-img {
+        position: absolute;
+        top: -40px;
+        left: 261px;
+        width: 40px;
+        display: none;
+    }
+    .down-img {
+        position: absolute;
+        top: 40px;
+        left: 257px;
+        width: 40px;
+        display: none;
+    }
+    .left-img {
+        position: absolute;
+        left: 218px;
+        width: 40px;
+        display: none;
+    }
+    .right-img {
+        position: absolute;
+        left: 300px;
+        width: 40px;
+        display: none;
+    }
+    .rotate_jia {
+        display: none;
+    }
+    .rotate_div {
+        display: none;
+    }
+    .rotate_jian {
+        display: none;
+    }
+    .footer {
+        display: block;
+    }
+}

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/amazeui.min.css" />
+    <link href="css/swiper.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/index.css" type="text/css" rel="stylesheet" />
+    <link href="css/reset.css" type="text/css" rel="stylesheet" />
+    <!-- <link href="css/find.css" type="text/css" rel="stylesheet" /> -->
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        /* force scrollbar */
+        
+        html {
+            overflow-y: scroll;
+        }
+        
+        body {
+            font-family: sans-serif;
+        }
+        /* ---- isotope ---- */
+        
+        .grid {
+            background: #DDD;
+        }
+        /* clear fix */
+        
+        .grid:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        /* ---- .grid-item ---- */
+        
+        .grid-sizer,
+        .grid-item {
+            width: 33.333%;
+        }
+        
+        .grid-item {
+            float: left;
+        }
+        
+        .grid-item img {
+            display: block;
+            max-width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Isotope - imagesLoaded progress</h1>
+
+    <ul data-am-widget="gallery" class="grid am-gallery am-avg-sm-2 am-avg-md-3 am-avg-lg-4 am-gallery-overlay" data-am-gallery="{ pureview:{target: 'a'}}">
+        <div class="grid-sizer"></div>
+        <li class="am-gallery-con grid-item">
+            <div class="am-gallery-item">
+                <a href="images/T1.jpg" class="">
+                    <img data-original="images/T1.jpg" alt="广州·小蛮腰" />
+                    <h3 class="am-gallery-title">广州·小蛮腰</h3>
+                    <div class="am-gallery-desc">2375-09-26</div>
+                </a>
+            </div>
+        </li>
+        <li class="am-gallery-con grid-item">
+            <div class="am-gallery-item">
+                <a href="images/T2.jpg" class="">
+                    <img data-original="images/T2.jpg" alt="番禺·莲花山" />
+                    <h3 class="am-gallery-title">番禺·莲花山</h3>
+                    <div class="am-gallery-desc">2375-09-26</div>
+                </a>
+            </div>
+        </li>
+        <li class="am-gallery-con grid-item">
+            <div class="am-gallery-item">
+                <a href="images/1.jpg" class="">
+                    <img data-original="images/1.jpg" alt="济南·大明湖" />
+                    <h3 class="am-gallery-title">济南·大明湖</h3>
+                    <div class="am-gallery-desc">2375-09-26</div>
+                </a>
+            </div>
+        </li>
+        <li class="am-gallery-con grid-item">
+            <div class="am-gallery-item">
+                <a href="images/2.jpg" class="">
+                    <img data-original="images/2.jpg" alt="肇庆·七星岩" />
+                    <h3 class="am-gallery-title">肇庆·七星岩</h3>
+                    <div class="am-gallery-desc">2375-09-26</div>
+                </a>
+            </div>
+        </li>
+        <li class="am-gallery-con grid-item">
+            <div class="am-gallery-item">
+                <a href="images/3.jpg" class="">
+                    <img data-original="images/3.jpg" alt="石嘴山·森林公园" />
+                    <h3 class="am-gallery-title">石嘴山·森林公园</h3>
+                    <div class="am-gallery-desc">2375-09-26</div>
+                </a>
+            </div>
+        </li>
+        <li class="am-gallery-con grid-item">
+            <div class="am-gallery-item">
+                <a href="images/4.jpg" class="">
+                    <img data-original="images/4.jpg" alt="广州·莲花山" />
+                    <h3 class="am-gallery-title">广州·莲花山</h3>
+                    <div class="am-gallery-desc">2375-09-26</div>
+                </a>
+            </div>
+        </li>
+        <li class="am-gallery-con grid-item">
+            <div class="am-gallery-item">
+                <a href="images/5.jpg" class="">
+                    <img data-original="images/5.jpg" alt="北京·软件园" />
+                    <h3 class="am-gallery-title">北京·软件园</h3>
+                    <div class="am-gallery-desc">2375-09-26</div>
+                </a>
+            </div>
+        </li>
+        <li class="am-gallery-con grid-item">
+            <div class="am-gallery-item">
+                <a href="images/6.jpg" class="">
+                    <img data-original="images/6.jpg" alt="安徽·黄山" />
+                    <h3 class="am-gallery-title">安徽·黄山</h3>
+                    <div class="am-gallery-desc">2375-09-26</div>
+                </a>
+            </div>
+        </li>
+        <li class="am-gallery-con grid-item">
+            <div class="am-gallery-item">
+                <a href="images/7.jpg" class="">
+                    <img data-original="images/7.jpg" alt="肇庆·鼎湖山" />
+                    <h3 class="am-gallery-title">肇庆·鼎湖山</h3>
+                    <div class="am-gallery-desc">2375-09-26</div>
+                </a>
+            </div>
+        </li>
+        <li class="am-gallery-con grid-item">
+            <div class="am-gallery-item">
+                <a href="images/8.jpg" class="">
+                    <img data-original="images/8.jpg" alt="广州·莲花山" />
+                    <h3 class="am-gallery-title">广州·莲花山</h3>
+                    <div class="am-gallery-desc">2375-09-26</div>
+                </a>
+            </div>
+        </li>
+        <li class="am-gallery-con grid-item">
+            <div class="am-gallery-item">
+                <a href="images/9.jpg" class="">
+                    <img data-original="images/9.jpg" alt="大理·洱海" />
+                    <h3 class="am-gallery-title">大理·洱海</h3>
+                    <div class="am-gallery-desc">2375-09-26</div>
+                </a>
+            </div>
+        </li>
+        <li class="am-gallery-con grid-item">
+            <div class="am-gallery-item">
+                <a href="images/10.jpg" class="">
+                    <img data-original="images/10.jpg" alt="广州·莲花山" />
+                    <h3 class="am-gallery-title">广州·莲花山</h3>
+                    <div class="am-gallery-desc">2375-09-26</div>
+                </a>
+            </div>
+        </li>
+        <li class="am-gallery-con grid-item">
+            <div class="am-gallery-item">
+                <a href="images/11.jpg" class="">
+                    <img data-original="images/11.jpg" alt="广州·猎德大桥" />
+                    <h3 class="am-gallery-title">广州·猎德大桥</h3>
+                    <div class="am-gallery-desc">2375-09-26</div>
+                </a>
+            </div>
+        </li>
+        <li class="am-gallery-con grid-item">
+            <div class="am-gallery-item">
+                <a href="images/12.jpg" class="">
+                    <img data-original="images/12.jpg" alt="香格里拉·普达措" />
+                    <h3 class="am-gallery-title">香格里拉·普达措</h3>
+                    <div class="am-gallery-desc">2375-09-26</div>
+                </a>
+            </div>
+        </li>
+        <li class="am-gallery-con grid-item">
+            <div class="am-gallery-item">
+                <a href="images/13.jpg" class="">
+                    <img data-original="images/13.jpg" alt="香港·高铁工地" />
+                    <h3 class="am-gallery-title">香港·高铁工地</h3>
+                    <div class="am-gallery-desc">2375-09-26</div>
+                </a>
+            </div>
+        </li>
+        <li class="am-gallery-con grid-item">
+            <div class="am-gallery-item">
+                <a href="images/14.jpg" class="">
+                    <img data-original="images/14.jpg" alt="番禺·星光隧道" />
+                    <h3 class="am-gallery-title">番禺·星光隧道</h3>
+                    <div class="am-gallery-desc">2375-09-26</div>
+                </a>
+            </div>
+        </li>
+        <li class="am-gallery-con grid-item">
+            <div class="am-gallery-item">
+                <a href="images/15.jpg" class="">
+                    <img data-original="images/15.jpg" alt="北京·鸟巢" />
+                    <h3 class="am-gallery-title">北京·鸟巢</h3>
+                    <div class="am-gallery-desc">2375-09-26</div>
+                </a>
+            </div>
+        </li>
+    </ul>
+
+
+
+    <!-- <div class="grid">
+        <div class="grid-sizer"></div>
+        <div class="grid-item">
+            <div class="am-gallery-item">
+                <a href="images/T1.jpg" class="">
+                    <img data-original="images/T1.jpg" src="images/T1.jpg" alt="广州·小蛮腰" />
+                    <h3 class="am-gallery-title">广州·小蛮腰</h3>
+                    <div class="am-gallery-desc">2375-09-26</div>
+                </a>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg" />
+        </div>
+        <div class="grid-item">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg" />
+        </div>
+        <div class="grid-item">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" />
+        </div>
+        <div class="grid-item">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" />
+        </div>
+        <div class="grid-item">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" />
+        </div>
+        <div class="grid-item">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" />
+        </div>
+        <div class="grid-item">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" />
+        </div>
+        <div class="grid-item">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" />
+        </div>
+    </div> -->
+
+
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="js/amazeui.js"></script>
+    <script src="js/jquery.lazyload.js"></script>
+    <script src="./js/isotope.pkgd.js"></script>
+    <script src="./js/imagesloaded.pkgd.js"></script>
+    <script>
+        // external js: isotope.pkgd.js, imagesloaded.pkgd.js
+        $(".am-gallery-con img").lazyload({
+            effect: "fadeIn"
+        });
+
+        // init Isotope
+        var $grid = $('.grid').isotope({
+            itemSelector: '.grid-item',
+            percentPosition: true,
+            masonry: {
+                columnWidth: '.grid-sizer'
+            }
+        });
+        // layout Isotope after each image loads
+        $grid.imagesLoaded().progress(function() {
+            $grid.isotope('layout');
+        });
+    </script>
+</body>
+
+</html>
