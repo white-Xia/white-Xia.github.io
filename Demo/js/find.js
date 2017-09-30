@@ -23,7 +23,7 @@ $(function(){
 		$(this).addClass("active-li").siblings().removeClass("active-li");
 	});
 
-	var $grid
+	var $grid;
 	$(".am-gallery-con img").lazyload({
 		placeholder:null,
 		threshold:500,
@@ -31,9 +31,10 @@ $(function(){
 		failurelimit : 10,
 		no_fake_img_loader:false,
 		load:function(){
+			var _this = $(this);
 			$grid = $('.grid').masonry();
-			$(this).removeClass('loading');
 			$grid.imagesLoaded().progress( function() {
+				_this.removeClass('loading');
 				$grid.masonry('layout');
 			});
 		}
