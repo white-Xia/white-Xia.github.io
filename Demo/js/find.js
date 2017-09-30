@@ -33,8 +33,8 @@ $(function(){
 		load:function(){
 			var _this = $(this);
 			$grid = $('.grid').masonry();
+			_this.removeClass('loading');
 			$grid.imagesLoaded().progress( function() {
-				_this.removeClass('loading');
 				$grid.masonry('layout');
 			});
 		}
