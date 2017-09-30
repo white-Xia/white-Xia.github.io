@@ -9803,7 +9803,7 @@
                 var $pureview = this.$pureview;
 
                 this.refreshSlides();
-
+                console.log($pureview);
                 $('body').append($pureview);
 
                 this.$title = $pureview.find(options.selector.title);
@@ -15711,7 +15711,7 @@
 
                 $gallery.each(function() {
                     var options = UI.utils.parseOptions($(this).attr('data-am-gallery'));
-
+                    
                     if (options.pureview) {
                         (typeof options.pureview === 'object') ?
                             $(this).pureview(options.pureview) : $(this).pureview();
