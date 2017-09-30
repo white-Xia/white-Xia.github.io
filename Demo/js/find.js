@@ -28,8 +28,8 @@ $(function(){
 		placeholder:null,
 		threshold:500,
 		event: 'scroll',
-		failurelimit : 10,
-		no_fake_img_loader:false,
+		// failurelimit : 10,
+		// no_fake_img_loader:false,
 		load:function(){
 			var _this = $(this);
 			$grid = $('.grid').masonry();
