@@ -2,8 +2,13 @@ $(function(){
 	var mask = $('.mask'),
 		contentMask = $('.mask-content'),
 		closeMask = $('.mask-close img'),
+		footerMask = $('.footer'),
 		_imgArr = [],
-		_pureviewArr = [];
+		_pureviewArr = [],
+		HEIGHT = window.innerHeight,
+		WIDTH = window.width,
+		scrollH,
+		totalH;
 
 
 
@@ -39,10 +44,24 @@ $(function(){
 		var _this = $(this);
 		
 	})
-
+	//获取第一张被隐藏的图片
+	var lockBox = $('.lock-con:first'),
+		offset = lockBox.offset(),
+		offsetY = offset.top + lockBox.height();
+		console.log(offset.top, lockBox.height());
+    $(window).scroll(function(){
+		scrollH = $(document).scrollTop();
+		totalH = scrollH + HEIGHT;
+		if(totalH > offsetY){
+			footerMask.show();
+		}else{
+			footerMask.hide();
+		}
+	})
 	/* 隐藏遮罩层 */
 	function hideMask(ele){
 		ele.hide();
+		$('body').css('overflow','auto');
 	}
 
 	/* lock 
